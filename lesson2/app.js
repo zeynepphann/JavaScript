@@ -1,8 +1,8 @@
 //==========IF-ELSE==========
 
-const s1=prompt("birinci sayi") // like scanner 
+const s1=Number (prompt("birinci sayi")) // like scanner 
 const islem=prompt("islemi giriniz")
-const s2 =prompt("ikinci sayi")
+const s2 = Number(prompt("ikinci sayi"))
 
 let sonuc=0
 
@@ -11,15 +11,15 @@ sonuc=s1+s2;
 }
 else if(islem=="-"){
 sonuc=s1-s2
-}
+} 
 else if(islem=="*"){
 sonuc=s1*s2
 }
 
 else if (islem == "/") {
-    !s2 ? alert("bölen 0 olamaz") : (sonuc = s1 / s2);
+  sonuc=s1/s2
 } else {
-    console.log("yanlış işlem yaptınız");
+    console.log("yanliş işlem yaptiniz");
 }
   
 console.log(`${s1} ${islem} ${s2} = ${sonuc}`);
@@ -35,7 +35,7 @@ alert(result); //hem pop-art olarak sonucu çıkarttık
   //************************ SWITCH-CASE ***********************
   //Girilen bir sayının onlar ve birler basamağındaki rakamlarını yazı ile yazdıran program:
   //----------------------------------------------------------
-var sayii = prompt("Bir Sayı girin.");
+var sayii = prompt("Bir Sayi girin.");
 var birler = sayii % 10;
 var onlar = Math.floor((sayii / 10) % 10);
 rakamYaz(onlar);
@@ -96,7 +96,7 @@ console.log(zamliMaas);
   // ÖRNEK
 const borç = 0;
 const maaş = 3000;
-console.log(!borç && maaş > 2825.9 ? "Kredi Alabilir  🤑" : "Kredi Alamaz 🥺");
+console.log(borç && maaş > 2825 ? "Kredi Alabilir  🤑" : "Kredi Alamaz 🥺");
   // !borç=> borç false ise yani mesela 0 ise
   //MacOS işletim sisteminde Emoji ve Semboller penceresini açmak için; klavyeden 'control' , 'command' ve 'space' tuşlarına aynı anda basın. Ardından ilgili
   //metin içeriğinde ya da sohbet penceresinde emoji klavyesi karşınıza çıkacaktır.
@@ -133,7 +133,7 @@ if (number % i == 0) {
       asal = false;
       break;
     }
-}
+} 
   //const asalMi = asal ? "ASAL" : "ASAL DEGIL";
 console.log(asal ? "ASAL" : "ASAL DEGIL");
   

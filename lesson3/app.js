@@ -1,5 +1,5 @@
 //=================================
-
+ 
 Fonksiyonlar 
 
 // 1.Function Declaration
